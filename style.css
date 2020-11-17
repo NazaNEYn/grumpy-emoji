@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.face {
+    background-color: rgb(253, 215, 91);
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+}
+
+.eye {
+    /* border: solid red 2px; */
+    width: 290px;
+    height: 90px;
+    top: 38%;
+}
+
+.left {
+    float: left;
+    top: 39%;
+    left: 24%;
+    width: 68px;
+    height: 68px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 100%;
+}
+
+.left::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -38px;
+    left: -40px;
+    border: solid transparent 0;
+    border-top: rgb(0, 0, 0) solid 25px;
+    border-radius: 60px 5px 10px 0;
+    width: 130px;
+    height: 80px;
+    transform: rotate(20deg);
+}
+
+.small-left {
+    width: 15px;
+    height: 28px;
+    border-radius: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.small-left::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    bottom: -3px;
+    right: -6px;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.822);
+}
+
+
+.right {
+    float: right;
+    top: 39%;
+    left: 74%;
+    width: 68px;
+    height: 68px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 100%;
+}
+
+.right::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -38px;
+    left: -15px;
+    border: solid transparent 0;
+    border-top: rgb(0, 0, 0) solid 25px;
+    border-radius: 5px 60px 10px 0;
+    width: 130px;
+    height: 80px;
+    transform: rotate(-20deg);
+}
+
+.small-right {
+    position: absolute;
+    width: 15px;
+    height: 28px;
+    border-radius: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.small-right::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    bottom: -3px;
+    right: -6px;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.822);
+}
+
+.mouth {
+    position: absolute;
+    top: 270px;
+    border: solid transparent 0;
+    border-top: rgb(0, 0, 0) solid 40px;
+    border-radius: 100px 100px 10px 0;
+    width: 180px;
+    height: 80px;
+}
